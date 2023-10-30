@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/games" >
+        <file>gamesList</file>
+    </qresource>
+</RCC>

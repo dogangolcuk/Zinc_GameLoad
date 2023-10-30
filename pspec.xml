@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>QZinc</Name>
+	<Homepage>http://code.google.com/dogangolcuk</Homepage>
+        <Packager>
+            <Name>dogangolcuk</Name>
+            <Email>dogangolcuk@gmail.com</Email>
+        </Packager>
+        <License>GPL-2</License>
+        <IsA>app:gui</IsA>
+	<PartOf>applications.games</PartOf>
+        <Summary>Zinc Arayüzü</Summary>
+        <Description>Zinc arayüzü, oyunların yerini belirterek oynamaya başlayabilirsiniz.</Description>
+	<Archive sha1sum="7b01e69fd94b24f47ee250f613fbc0079b89b21b" type="targz">/home/qwert/MyProgs/2011/Qzinc/QZinc-0.4.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+	 <Name>QZinc</Name>
+         <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+	    <Path fileType="data">/tmp</Path>
+	    <Path fileType="library">/usr/lib</Path>
+        </Files>
+        <AdditionalFiles>
+		<AdditionalFile owner="root" permission="0777" target="/usr/share/applications/QZinc.desktop">QZinc.desktop</AdditionalFile>
+		<AdditionalFile  owner="root" permission="0777" target="/tmp/libcontrolznc.so">libcontrolznc.so</AdditionalFile>
+		<AdditionalFile  owner="root" permission="0777" target="/tmp/librendererznc.so">librendererznc.so</AdditionalFile>
+		<AdditionalFile  owner="root" permission="0777" target="/tmp/libs11player.so">libs11player.so</AdditionalFile>
+		<AdditionalFile  owner="root" permission="0777" target="/usr/lib/libsoundznc.so">libsoundznc.so</AdditionalFile>
+		<AdditionalFile  owner="root" permission="0777" target="/usr/bin/zinc">zinc</AdditionalFile>
+        </AdditionalFiles>
+   </Package>
+   <History>
+        <Update release="1">
+            <Date>2011-03-02</Date>
+            <Version>0.4</Version>
+            <Comment>First release</Comment>
+            <Name>dogangolcuk</Name>
+            <Email>dogangolcuk@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
